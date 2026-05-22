@@ -342,7 +342,9 @@ body.dark-mode {
   }
 
   .navbar {
-    width: min(var(--container), calc(100% - (var(--page-padding) + var(--page-padding))));
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 18px 0;
   }
 
   .nav-links {
@@ -354,31 +356,43 @@ body.dark-mode {
   }
 
   .hero-content {
-    width: min(var(--container), calc(100% - (var(--page-padding) + var(--page-padding))));
+    width: calc(100% - 40px);
     margin: 35px auto 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text";
     gap: 36px;
-    align-items: stretch;
+    align-items: center;
   }
 
   .profile-card {
-    max-width: 320px;
+    grid-area: image;
     width: 100%;
+    max-width: 320px;
     margin: 0 auto;
-    order: -1;
   }
 
   .hero-text {
+    grid-area: text;
     width: 100%;
-    order: 1;
+    max-width: 100%;
+    text-align: left;
   }
 
   .hero-text p,
   .summary,
   #about p {
+    width: 100%;
+    max-width: 100%;
     text-align: justify;
     text-align-last: left;
+  }
+
+  .tagline,
+  .section-label {
+    text-align: left;
   }
 
   h1 {
@@ -386,9 +400,9 @@ body.dark-mode {
   }
 
   .summary {
-    max-width: 100%;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 32px;
   }
 
   .hero-buttons {
@@ -407,13 +421,14 @@ body.dark-mode {
   }
 
   .section {
-    width: min(var(--container), calc(100% - (var(--page-padding) + var(--page-padding))));
+    width: calc(100% - 40px);
     margin: 30px auto 0;
     padding: 36px 0;
   }
 
   .section > p {
     width: 100%;
+    max-width: 100%;
   }
 
   .card-header {
