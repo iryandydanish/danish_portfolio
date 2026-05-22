@@ -16,32 +16,34 @@
       <h2 class="logo">Danish Iryandy</h2>
 
       <div class="nav-links">
-        <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
+
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
         <svg id="themeIcon" class="theme-icon" viewBox="0 0 24 24" aria-hidden="true">
           <circle cx="12" cy="12" r="4.5"></circle>
           <path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"></path>
         </svg>
       </button>
-      </button>
     </nav>
 
     <section class="hero-content">
       <div>
         <p class="tagline">Data & AI Platform Engineer</p>
-        <h1>Hi, I'm Danish Iryandy</h1>
+        <h1>Hi, I'm Danish!</h1>
         <p class="summary">
-          Data Engineer with hands-on experience designing, building, and maintaining production-grade data pipelines,
-          reporting dashboards, and end-to-end data workflows across Databricks, Power BI, Python, PySpark, and SQL.
-          Strong background in ETL/ELT development, data transformation, semantic modelling, DAX, database
-          optimisation, and performance tuning, including reducing high-impact query execution time by up to 90%.
-          Proven ability to deliver scalable data solutions for analytics, business intelligence, and LLM workloads, while
-          supporting CI/CD, automation, documentation, and cross-functional stakeholder collaboration.
-
+          Singapore-based Data Engineer looking to relocate to Oceania, the UK, or Europe for the 
+          right Data Engineering or Data Analytics opportunity. I build reliable data pipelines, analytics workflows, 
+          and BI solutions using Databricks, PySpark, Python, SQL, and Power BI, with experience 
+          supporting both business reporting, machine learning operations as well as LLM-ready data workloads.
+        </p>
+        <p class="summary">
+          My work spans across pipeline development, data modelling, dashboarding, performance tuning, CI/CD
+          support, automation, documentation, and stakeholder collaboration. I am especially interested 
+          in roles where I can help teams turn messy operational data into scalable, trusted, 
+          production-ready data products.        
         </p>
 
         <div class="hero-buttons">
@@ -57,14 +59,6 @@
   </header>
 
   <main>
-    <section id="about" class="section">
-      <p class="section-label">About</p>
-      <h2>About Me</h2>
-      <p>
-        Write your background here. Mention your current role, strongest skills,
-        industries you have worked in, and what kind of opportunities you are looking for.
-      </p>
-    </section>
 
     <section id="experience" class="section">
       <p class="section-label">Experience</p>
@@ -127,13 +121,17 @@
 
       <div class="skills-grid">
         <span>SQL</span>
+        <span>PySpark</span>
+        <span>Pandas</span>
         <span>Python</span>
         <span>Power BI</span>
+        <span>DAX</span>
         <span>Databricks</span>
         <span>GitHub</span>
         <span>Docker</span>
-        <span>Cloud</span>
+        <span>ETL/ELT</span>
         <span>Data Engineering</span>
+        <span>Data Analytics</span>
       </div>
     </section>
 
@@ -142,33 +140,86 @@
       <h2>Projects</h2>
 
       <div class="project-grid">
-        <div class="card">
-          <h3>Project Name</h3>
+        <div class="card project-card">
+          <h3>ApartmentLab</h3>
+
           <p>
-            Briefly explain what the project does, what tools you used,
-            and what problem it solves.
+            Self-hosted homelab project that runs multiple web applications with separate
+            Pre-Production and Production environments operating on an on-premise home lab
+            using Docker Compose, GitOps-style CI/CD, GitHub Actions, and 
+            shell automation.
           </p>
-          <a href="#" target="_blank">View Project</a>
+
+          <div class="app-list">
+            <a href="https://danishiryandy.apartmentlab.org/" target="_blank">Danish's Website</a>
+            <a href="https://bentopdf.apartmentlab.org/" target="_blank">BentoPDF</a>
+            <a href="https://aiostreams.apartmentlab.org/" target="_blank">AIOStreams</a>
+            <a href="https://send2ereader.apartmentlab.org/" target="_blank">Send2Kobo</a>
+            <p class="whisper">
+              psst, the web-app names are clickable!
+            </p>
+          </div>
+
+
+          <p>
+            <a href="https://github.com/iryandydanish/apartmentlab" target="_blank">
+              View Github Repo
+            </a>
+          </p>
+
         </div>
 
-        <div class="card">
-          <h3>Project Name</h3>
+        <div class="card project-card">
+          <h3>This Website</h3>
+
           <p>
-            Briefly explain another project here.
+            This project demonstrates my ability to use HTML and CSS together to build a
+            lightweight, responsive website. It also serves as a platform where I can
+            showcase my skills, experiences, and projects in greater detail.
           </p>
-          <a href="#" target="_blank">View Project</a>
+
+          <p>
+            This website is maintained in a separate repository and automatically pulled
+            into ApartmentLab during deployment, allowing the application code and hosting
+            infrastructure to remain cleanly separated.
+          </p>
+
+          <div class="app-list">
+            <a href="https://danishiryandy.apartmentlab.org/" target="_blank">Danish's Website</a>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>GitOps</span>
+          </div>
+
+          <p>
+            <a href="https://github.com/iryandydanish/danish_portfolio" target="_blank">
+              View Github Repo
+            </a>
+          </p>
         </div>
       </div>
     </section>
-
+    
     <section id="education" class="section">
       <p class="section-label">Education</p>
       <h2>Education</h2>
 
       <div class="card">
-        <h3>Your Degree / Diploma</h3>
-        <p>School Name</p>
-        <span>Year - Year</span>
+        <h3>Bachelor of Science in Business Administration</h3>
+        <p>University of the People</p>
+        <span>October 2027</span>
+      </div>
+
+      <div class="card">
+        <h3>Specialist Diploma in Business Analytics</h3>
+        <p>Temasek Polytechnic</p>
+        <span>October 2025</span>
+      </div>
+
+      <div class="card">
+        <h3>Diploma in Chemical & Biomolecular Engineering</h3>
+        <p>Ngee Ann Polytechnic</p>
+        <span>May 2022</span>
       </div>
     </section>
 
@@ -176,14 +227,14 @@
       <p class="section-label">Contact</p>
       <h2>Get In Touch</h2>
 
-      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-      <p>LinkedIn: <a href="#" target="_blank">Your LinkedIn</a></p>
-      <p>GitHub: <a href="#" target="_blank">Your GitHub</a></p>
+      <p>Email: <a href="mailto:iryandydanish@gmail.com">iryandydanish@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/danish-iryandy/" target="_blank">linkedin.com/danish-iryandy</a></p>
+      <p>GitHub: <a href="https://github.com/iryandydanish" target="_blank">github.com/iryandydanish</a></p>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Danish Iryandy. All rights reserved.</p>
+    <p>2026 Danish Iryandy. Proudly self-hosted on ApartmentLab</p>
   </footer>
   <script>
     const themeToggle = document.getElementById("themeToggle");
