@@ -25,9 +25,53 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  background: var(--bg);
+  background-color: var(--bg);
   color: var(--text);
   line-height: 1.7;
+  transition:
+    background-color 0.45s ease,
+    color 0.45s ease;
+}
+
+body,
+a,
+.navbar,
+.logo,
+.nav-links a,
+.theme-toggle,
+.theme-icon,
+.hero,
+.hero-content,
+.hero-text,
+.tagline,
+.section-label,
+.section,
+.section > p,
+.card,
+.card-header p,
+.card-header span,
+.card span,
+.summary,
+.project-card,
+.project-card p,
+.experience-description,
+#about p,
+.skills-grid span,
+.app-list a,
+.app-list span,
+.btn,
+footer,
+.whisper,
+.project-link a,
+.contact a {
+  transition:
+    background-color 0.45s ease,
+    color 0.45s ease,
+    border-color 0.45s ease,
+    box-shadow 0.45s ease,
+    opacity 0.45s ease,
+    fill 0.45s ease,
+    stroke 0.45s ease;
 }
 
 a {
@@ -87,7 +131,7 @@ a:hover {
   flex: 0 0 44px;
   border: 2px solid var(--text);
   border-radius: 999px;
-  background: transparent;
+  background-color: transparent;
   color: var(--text);
   cursor: pointer;
   display: flex;
@@ -96,7 +140,7 @@ a:hover {
 }
 
 .theme-toggle:hover {
-  background: var(--text);
+  background-color: var(--text);
   color: var(--bg);
 }
 
@@ -118,6 +162,7 @@ a:hover {
   gap: 70px;
   align-items: center;
 }
+
 .hero-text {
   grid-area: text;
   text-align: left;
@@ -190,19 +235,19 @@ h3 {
 }
 
 .btn.primary {
-  background: var(--accent);
+  background-color: var(--accent);
   color: white;
 }
 
 .btn.primary:hover {
-  background: var(--accent-dark);
+  background-color: var(--accent-dark);
   color: white;
 }
 
 .btn.secondary {
   border: 1px solid var(--border);
   color: var(--text);
-  background: var(--surface);
+  background-color: var(--surface);
 }
 
 .profile-card {
@@ -213,6 +258,9 @@ h3 {
   box-shadow: var(--shadow);
   overflow: hidden;
   width: 100%;
+  transition:
+    box-shadow 0.45s ease,
+    filter 0.45s ease;
 }
 
 .profile-card img {
@@ -221,7 +269,7 @@ h3 {
   object-fit: cover;
   border-radius: 27px;
   display: block;
-  background: #ddd;
+  background-color: #ddd;
 }
 
 .section {
@@ -235,7 +283,7 @@ h3 {
 }
 
 .card {
-  background: var(--surface);
+  background-color: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 28px;
@@ -272,7 +320,7 @@ ul {
 }
 
 .skills-grid span {
-  background: var(--surface);
+  background-color: var(--surface);
   border: 1px solid var(--border);
   padding: 10px 16px;
   border-radius: 999px;
@@ -304,7 +352,7 @@ ul {
 .app-list a,
 .app-list span {
   border: 1px solid var(--border);
-  background: var(--bg);
+  background-color: var(--bg);
   color: var(--text);
   padding: 8px 12px;
   border-radius: 999px;
